@@ -1,0 +1,39 @@
+<svg version="1.1"  viewBox="-150 -150 1000 1000"  xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css">
+    <![CDATA[    .Connect { stroke:#888888; stroke-width:2 }    .SamplePath {}    .Point { fill:#888888 }]]>
+  </style>
+  <!--三次贝塞尔曲线-->
+  <path
+    class="SamplePath"
+    d="M20 100 C100 200 300 300 400 100"
+    fill="none"
+    stroke="red"
+    stroke-width="8"
+  />
+  <circle class="Point" cx="20" cy="100" r="8" />
+  <!--起点-->
+  <circle class="Point" cx="100" cy="200" r="8" />
+  <!--控制点1-->
+  <circle class="Point" cx="300" cy="300" r="8" />
+  <!--控制点2-->
+  <circle class="Point" cx="400" cy="100" r="8" />
+  <!--终点-->
+  <polyline class="Connect" points="20 100 100 200" />
+  <polyline class="Connect" points="300 300 400 100" />
+  <!--三次平滑贝塞尔曲线你-->
+  <path
+    class="SamplePath"
+    d="M20 100 C100 200 300 300 400 100 S400 300 500 300"
+    fill="none"
+    stroke="blue"
+    stroke-width="3"
+  />
+  <circle class="Point" cx="500" cy="-100" r="8" />
+  <!--控制点1-->
+  <circle class="Point" cx="400" cy="300" r="8" />
+  <!--控制点2-->
+  <circle class="Point" cx="500" cy="300" r="8" />
+  <!--终点-->
+  <polyline class="Connect" points="400 100 500 -100" />
+  <polyline class="Connect" points="400 300 500 300" />
+</svg>
